@@ -6,7 +6,8 @@
 import os
 from .manager import Checkpoint, CheckpointManager
 
-root = os.environ.get("TEXTLESS_CHECKPOINT_ROOT", "~/.textless/")
+# root = os.environ.get("TEXTLESS_CHECKPOINT_ROOT", "~/.textless/")
+root = os.environ.get("TEXTLESS_CHECKPOINT_ROOT", "tmpdir/hubert/")
 CHECKPOINT_MANAGER: CheckpointManager = CheckpointManager(disk_root=root)
 
 
